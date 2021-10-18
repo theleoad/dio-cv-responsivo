@@ -295,3 +295,48 @@ article:not(:last-of-type) {
   font-weight: 800;
   text-align: center;
 }
+
+@media (max-width: 1024px) {
+  .soft-skills {
+    flex-wrap: wrap;
+  }
+
+  .soft-skill {
+    margin: 4px;
+    width: calc(50% - 8px);
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    display: block;
+  }
+
+  aside,
+  section {
+    width: 100%;
+  }
+
+  section {
+    padding: 32px 16px 0;
+  }
+
+  .article-title-wrapper {
+    display: flex;
+    padding-right: 0;
+  }
+
+  .article-title {
+    width: 100%;
+  }
+
+  .progress,
+  .soft-skill,
+  .portfolio-item {
+    width: 100%;
+  }
+
+  .portfolio-item figure {
+    text-align: center;
+  }
+}
